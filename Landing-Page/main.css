@@ -1,0 +1,235 @@
+/* Eczar regular */
+@font-face {
+    font-family: "Eczar";
+    src: url(../fonts/Eczar-Regular.eot),
+        url(../fonts/Eczar-Regular.woff2) format('woff2'),
+        url(../fonts/Eczar-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Eczar medium */
+@font-face {
+    font-family: "Eczar";
+    src: url(../fonts/Eczar-Medium.eot),
+        url(../fonts/Eczar-Medium.woff2) format('woff2'),
+        url(../fonts/Eczar-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Eczar semi bold */
+@font-face {
+    font-family: "Eczar";
+    src: url(../fonts/Eczar-SemiBold.eot),
+        url(../fonts/Eczar-SemiBold.woff2) format('woff2'),
+        url(../fonts/Eczar-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Eczar bold */
+@font-face {
+    font-family: "Eczar";
+    src: url(../fonts/Eczar-Bold.eot),
+        url(../fonts/Eczar-Bold.woff2) format('woff2'),
+        url(../fonts/Eczar-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Eczar extra bold */
+@font-face {
+    font-family: "Eczar";
+    src: url(../fonts/Eczar-ExtraBold.eot),
+        url(../fonts/Eczar-ExtraBold.woff2) format('woff2'),
+        url(../fonts/Eczar-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6c5b7c;
+    font-family: 'Eczar';
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: larger;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.levelHeader > a:link {
+    color: white;    
+}
+
+.mainMiddle {    
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+}
+
+.item1 > ul {
+    margin-left: 35px;
+}
+
+.mainFocusText {
+    font-family: 'Eczar';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+._600styleText {
+    font-family: 'Eczar';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+._600styleText > p {
+    margin-top: 0px;
+}
+
+.smallText {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.navigationContainer {
+    min-height: 2.55em;
+    padding: 0;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+.navi-el {
+    position: relative;
+    float:left;
+    border: #867298 solid 0.5px;
+    width: 19.8%;
+    text-align: center;
+    box-sizing: content-box;
+    height: 2.3em;
+    line-height: 2.3em;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+/* .navi-el-middle{    
+    margin-left: 0.25%;
+} */
+
+.exerciceContainer {
+    border:#C06C84;
+    border-radius: 15%;
+    border-style: solid;
+    min-height: 4em;
+    line-height: 4em;    
+}
+
+/* .exerciceContainer > p {
+    position: relative;
+    float:left;
+    width: 40px;  
+} */
+
+#pageTitle {
+    text-align: left;
+    padding-left: 25px;
+}
+
+#HandEmoji {
+    font-size: 40px;
+}
+
+#mainHeader {
+    background-image: /* linear-gradient(
+        to right bottom, 
+        rgba(134, 114, 152, 0.4), 
+        rgba(192, 108, 132, 0.4)),  */
+        url(img/eiffelT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-color: #867298;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 85%);
+    height: 90vh;
+    width: 80%;
+}
+
+#mainHeader > h1 {
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+
+#mainDiv {
+    min-height: 120vh;
+    background-color: #6c5b7c;
+}
+#mainFooter {
+    background-color: #C06C84;
+    min-height: 40px;
+    text-align: center;
+}
+
+#mainFooter a:link {
+    color: #F8B595;
+    text-decoration: none;
+}
+#mainFooter a:visited {
+    color: #6C5B7C;
+    text-decoration: none;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

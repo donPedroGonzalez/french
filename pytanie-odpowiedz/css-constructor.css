@@ -1,0 +1,84 @@
+/*
+Nice color palettes:
+#6c5b7c, #7f0000, #003300, #00363a
+*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-rows: 1.5fr 1fr 6fr 0.5fr;
+  gap: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper > div {
+  padding: 1em;
+  border-radius: 0.5rem;
+}
+.header {
+  background-color: #00656d !important;
+  color: white !important;
+}
+.side-main {
+  grid-row: 2 / span 2;
+  background-color: #a7c3c5;
+}
+.header:nth-child(even) {
+  background-color: #00363a !important;
+  color: white !important;
+}
+.footer {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: larger;
+  background-color: #45a000 !important;
+  color: white !important;
+}
+.footer:nth-child(even) {
+  background-color: #2f6d00 !important;
+  color: white !important;
+}
+.hidden {
+  display: none;
+}
+#logo {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+#title {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: xx-large;
+  text-shadow: 0px 0px 5px #03636a;
+}
+#navigation {
+  display: grid;
+}
+#main-window-title {
+  display: grid;
+  align-content: center;
+  background-color: #5ea3a8;
+  font-size: larger;
+  margin: 0;
+  padding: 0;
+}
+#main-window-title > div p {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#main-window-body {
+  background-color: #89adb0;
+  overflow-y: auto;
+}
+#stats {
+  grid-column: 3;
+}
+#myFooter {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: medium !important;
+}
